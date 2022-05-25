@@ -3,12 +3,13 @@ import React from 'react'
 import { useGlobalContext } from './context'
 
 const Stories = () => {
-  const { isLoading, hits, removeStory } = useGlobalContext();
+  const { isLoading, hits, removeStory, searchTerm } = useGlobalContext();
   if (isLoading){
     return <div className="loading"></div>
   } 
   return (
     <section className="stories">
+      <h3>Results for {searchTerm}</h3>
       {hits.map(story => {
         const {objectID, title, num_comments, url, points, author} = story
        return ( <article className="story" key={objectID}>

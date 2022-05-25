@@ -236,6 +236,11 @@ Story
   display: grid;
   gap: 2rem;
 }
+
+.stories h3 {
+  grid-column: 1/-1;
+  margin-left: 0.25rem;
+}
 @media screen and (min-width: 992px) {
   .stories {
     display: grid;
