@@ -12,7 +12,7 @@ const SearchForm = () => {
 
   return (
     <form className="search-form" onSubmit={onSubmit}>
-      <h2>Search Hacker News</h2>
+      <h2>Hacker News Search</h2>
       <p>Type and hit Enter for Results</p>
       <input type="text" className="form-input" onChange={(e) => setQuery(e.target.value)}/>
     </form>
