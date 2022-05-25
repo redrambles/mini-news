@@ -1,8 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useGlobalContext } from './context'
 
 const SearchForm = () => {
-  return <h2>search form</h2>
+  const { handleSearch } = useGlobalContext();
+  const [query, setQuery] = useState("")
+
+  const onSubmit = (e) => {
+    e.preventDefault();
+    handleSearch(query)
+  }
+
+  return (
+    <form className="search-form" onSubmit={onSubmit}>
+      <h2>Search Hacker News</h2>
+      <p>Type and hit Enter for Results</p>
+      <input type="text" className="form-input" onChange={(e) => setQuery(e.target.value)}/>
+    </form>
+  )
 }
 
 export default SearchForm

@@ -140,7 +140,7 @@ Search
 ===============
 */
 .search-form {
-  width: 90vw;
+  width: 85vw;
   max-width: var(--max-width);
   margin: 0 auto;
   margin-top: 5rem;
@@ -181,7 +181,8 @@ Buttons
   font-weight: bold;
 }
 
-.btn-container button {
+.btn-container button,
+.search-form button {
   margin: 1rem;
   padding: 0.25rem 0.5rem;
   text-transform: capitalize;
