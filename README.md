@@ -4,6 +4,10 @@ Hello and welcome!
 
 This is a project that queries the HackerNews API to return results around a search term.
 
+![](https://cldup.com/jYuizeoslJ.png)
+
+[**Live Project Here**](https://redrambles.github.io/mini-news/)  👈🏼 
+
 ### Features
 - React
 - Context
